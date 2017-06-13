@@ -9,37 +9,94 @@
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
 </head>
 <body>
+    <link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
+<!-- Header -->
     <header>
         <div class="inner">
             <div class="header__logo">Instaspam</div>
-            <div>
-                <input type="text" placeholder = "e.g. People"> 
+                <div class="header__search">
+                    <input type="text" placeholder = "e.g. People"> 
 
-            </div>
-            <div>
-                <a href="#" class="button button--blue">Get the App</a>
-                <a href="#" class="button">Login</a>
-            </div>
+                </div>
+                <div>
+                    <a href="#" class="button button--blue">Get the App</a>
+                    <a href="#" class="button">Login</a>
+                </div>
         </div>
     </header>
 <!-- User Profile Area -->
-<div class="Profile">
+<div class="profile">
     <div class="inner">
             <div class="profile__image">
-                <img src="http://unsplash.it/200?random" alt="">
+                <img src="http://unsplash.it/200/?image=23" alt="">
             </div>
             <div class="profile__info">
                 <h2>Username</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima omnis maxime nulla tempora tenetur nam.
                 </p>
-                <a href="#">www.twitter.com</a>
-                <ul><l1>100 Posts</l1>
-                <l1>7000 Followers</l1>
-                <l1>1 following</l1>
+                <a class="button__twitter" href="#">www.twitter.com</a>
+                <ul class="profile__meta">
+                    <li><b>100</b> Posts</li>
+                    <li><b>70</b> Followers</li>
+                    <li><b>23</b> Following</li>
                 </ul>
             </div>
     </div>
 </div>
+
+<!-- Images -->
+<div class="images">
+    <div class="inner">
+        <a href="" class = "image">
+            <img src="http://unsplash.it/320/?image=12" alt="">
+            <span class="image__cover">View Image</span>
+        </a>
+        <a href="" class = "image">
+            <img src="http://unsplash.it/320/?image=20" alt="">
+            <span class="image__cover">View Image</span>
+        </a>
+        <a href="" class = "image">
+            <img src="http://unsplash.it/320/?image=42" alt="">
+            <span class="image__cover">View Image</span>
+        </a>
+        <a href="" class = "image">
+            <img src="http://unsplash.it/320/?image=68" alt="">
+            <span class="image__cover">View Image</span>
+        </a>
+        <a href="" class = "image">
+            <img src="http://unsplash.it/320/?image=22" alt="">
+            <span class="image__cover">View Image</span>
+        </a>
+        <a href="" class = "image">
+            <img src="http://unsplash.it/320/?image=42" alt="">
+            <span class="image__cover">View Image</span>
+        </a>
+        <a href="" class = "image">
+            <img src="http://unsplash.it/320/?image=68" alt="">
+            <span class="image__cover">View Image</span>
+        </a>
+        <a href="" class = "image">
+            <img src="http://unsplash.it/320/?image=22" alt="">
+            <span class="image__cover">View Image</span>
+        </a>
+        
+    </div>
+</div>
+
+<!-- Footer -->
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var distance = window.pageYOffset||document.documentElement.scrollTop
+            var header = document.querySelector('header')
+            if(distance > 200) {
+                header.classList.add('header--small')
+                } else {
+                    header.classList.remove('header--small')
+                }
+        })
+    </script>
 
 </body>
 </html>
